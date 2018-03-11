@@ -15,5 +15,6 @@ public interface FacadeInterface {
     
     public Pet findPet(int petId);
     public List<Pet> getAllPets();
+    public int petCount(); 
     
 }

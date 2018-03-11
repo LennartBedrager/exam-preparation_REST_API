@@ -40,4 +40,11 @@ public class FacadeImpl implements FacadeInterface{
         
     }
     
+    @Override
+    public int petCount(){
+        Query q = em.createQuery("select count(*) from Pet");
+        int count = (int) q.getSingleResult();
+        return count;
+    }
+    
 }
